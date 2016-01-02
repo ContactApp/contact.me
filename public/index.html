@@ -3,15 +3,16 @@
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+  <script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
 </head>
-<body>
-  <div> Welcome to Contact.me!</div>
-  <div>Sign-up!</div>
-  <div>Sign-in!</div>
-  <div> Your solution to safe public contact filtering!</div>
-  <script src="/javascripts/main.js"></script>
-  <script src="/javascripts/services.js.js"></script>
-  <script src="/javascripts/routes.js"></script>
+<body ng-app="contactApp">
+  <div> Main Page!</div>
+  <div ng-view></div>
+  
+  <script src="/javascripts/app.js"></script>
+  <script src="/javascripts/login.js"></script>
+  <script src="/javascripts/services.js"></script>
+  <script src="/javascripts/profile.js"></script>
 </body>
 </html>
